@@ -35,14 +35,15 @@
 
 //일급객체 = 일반객체처럼 모든 연산이 가능한것 === 매개변수 반환값 할당명령문 동일비교대상
 //일급함수 = 함수를 다른 함수의 매개변수 및 반환값으로 쓸수 있다
+//setTimeOut 이라는 고차함수
 
-const print = (num) => console.log(num);
-const printMultiplyTwice = (num) => console.log(num * 2);
+// function fruit(name, emoji) {
+//   this.name = name;
+//   this.emoji = emoji;
+//   this.display = () => {
+//     console.log(`${this.name}`);
+//   };
+// }
 
-function random(num, func) {
-  for (let i = 0; i < num; i++) {
-    func(i);
-  }
-}
-
-random(5, printMultiplyTwice);
+// const a = new fruit('apple', '😄');
+// a.display();
